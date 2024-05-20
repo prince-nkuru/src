@@ -3,22 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>uk website</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Header Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="flex justify-space-between flex-row m-10">
-    
-    <ul class="flex flex-row style-type-none text-black m-10">
-      <li><img class="w-24" src="logo-university-of-manchester.png" alt=""></li>
-      <li><img class="w-10" src="icon-home-25px-949699.png" alt=""></li>
-      <li class="mx-10">study</li>
-      <li>research</li>
-      <li>collaborate</li>
-      <li>discover</li>
-      <li>connect</li>
-      <li><img src="3a1acae4-93de-4b8b-af40-db59371b6b1f.svg" alt="">search</li>
-    </ul>
-  </div>
+  <header class="bg-white p-4 shadow">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="path-to-logo.png" alt="Logo" class="h-12 mr-4">
+        <div class="text-gray-800 text-lg">
+          <div class="font-bold">MANCHESTER</div>
+          <div class="text-sm">The University of Manchester</div>
+        </div>
+      </div>
+      <!-- Navigation Links -->
+      <nav class="flex space-x-6 text-gray-600">
+        <a href="#" class="hover:text-gray-800">Study</a>
+        <a href="#" class="hover:text-gray-800">Research</a>
+        <a href="#" class="hover:text-gray-800">Collaborate</a>
+        <a href="#" class="hover:text-gray-800">Discover</a>
+        <a href="#" class="hover:text-gray-800">Connect</a>
+      </nav>
+      <!-- Search Icon -->
+      <div>
+        <button class="flex items-center border border-gray-300 p-2 rounded">
+          <svg class="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0a7.5 7.5 0 1110.606-10.606 7.5 7.5 0 01-10.606 10.606z" />
+          </svg>
+          <span class="ml-2">Search</span>
+        </button>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
