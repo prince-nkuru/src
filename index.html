@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="h-screen bg-gray-400 md:bg-blue-400 lg:bg-gray-400">
-  <div class="flex place-content-center mt-20">
-    <p class="text-4xl text-yellow-400 mt-24">hello there!</p>
-    <p class="p-10 w-2/4 bg-white rounded-xl ml-10 cursor-help sm:bg-green-200 lg:bg-red-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nesciunt qui similique quisquam ad architecto sapiente, nulla ut alias nemo, illo voluptate molestiae iure sint, eos id fugiat? Fugit corrupti rem totam incidunt, rerum quod odit deleniti natus voluptatum, fuga inventore itaque officiis at vitae sapiente aperiam, nisi quaerat deserunt!</p>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <!--content wrapper-->
+      <div>
+        <nav>
+          <div>
+            <h1>
+              <a href="/">Food ninja</a>
+            </h1>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--end nav-->
+      <main>
+        <div>
+          <a href="#">Login</a>
+          <a href="#">Sign up</a>
+        </div>
+        <header>
+          <h2>Recipes</h2>
+          <h3>For ninjas</h3>
+        </header>
+        <div>
+          <h4>Latest recipes</h4>
 
-  <script>
+          <div>
+            <!--cards go here !-->
 
-for (let i = 0; i < 11; i++){
-
-  if (i > 0){
-    console.log('...........................................');
-  }
-    for (let j = 0; j < 11; j++){
-      console.log(`${i} x ${j} = ${i} * ${j}`)
-    }
-  }
-  </script>
-</body>
+            <div>
+              <img src="" alt="">
+              <div>
+                <span>5 bean chilli stew</span>
+                <span>Recipe by Mario</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
